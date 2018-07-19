@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<title>TracyWorld</title>
+</head>
+<body>
+	<div id="app">
+        <p>Hello  {{ rawHtml }}                  </p>
+        <p>Hello  <span v-html="rawHtml"></span> </p>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                rawHtml: '<span style="color:red">TracyWorld</span>'
+            }
+        })
+    </script>
+</body>
+</html>
