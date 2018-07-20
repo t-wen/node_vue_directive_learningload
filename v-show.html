@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<title>TracyWorld</title>
+</head>
+<body>
+	<div id="app">
+		<h1 v-show="ok">Hello TracyWorld, "ok" is true and "no" is false</h1>
+		<h2 v-show="no">Hello TracyWorld, "no" is false</h2>
+	</div>
+	<script>
+	new Vue({
+		el: '#app',
+		data: {
+			ok: true,
+			no: false
+		}
+	})
+	</script>
+</body>
+</html>
