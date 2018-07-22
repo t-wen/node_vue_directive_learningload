@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<title>TracyWorld</title>
+</head>
+<body>
+	<div id="app">
+		<div v-if="type === 'A'">
+		Hello TracyWorld, the type is A
+		</div>
+		<div v-else-if="type === 'B'">
+		Hello TracyWorld, the type is B
+		</div>
+		<div v-else-if="type === 'C'">
+		Hello TracyWorld, the type is C
+		</div>
+		<div v-else>
+		Hello TracyWorld, the type is Not A/B/C
+		</div>
+	</div>
+	<script>
+	new Vue({
+		el: '#app',
+		data: {
+			type: 'B'
+		}
+	})
+	</script>
+</body>
+</html>
